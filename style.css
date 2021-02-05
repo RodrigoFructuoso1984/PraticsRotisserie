@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    background-color: rgb(231, 225, 227);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+nav a{
+    color:rgb(201, 122, 171);
+    margin: auto 20px auto 40px;
+    text-decoration: none;
+    text-align: right;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+h1{
+    background-color: rgb(231, 225, 227); text-align: center; 
+    color: rgb(201, 122, 171);
+}
+
+strong{
+    text-transform: uppercase;
+}
+
+.footer{
+    background-color: rgb(201, 122, 171);
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.flex-container{
+    display: flex;
+    height: 300px;
+    justify-content:space-around;
+    flex-direction: row;
+    padding: 50px;
+    font-size: 16px;
+}
+
+img {
+    max-width: 120px;
+}
+
+.flex-container .img{
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.produtos{
+    padding: 15px;
+    font-size: 14px;
+}
+
+.flex-container-produtos{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.descricao{
+    padding: 10px;
+}
