@@ -5,13 +5,12 @@
 }
 
 body, html{
-    height: 100%;
     background-color: rgb(231, 225, 227);
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+#header-pagina-inicial {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,15 +18,24 @@ header {
     background-color: black;
 }
 
-nav{
+#nav-pagina-inicial{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-nav a{
-    color:rgb(201, 122, 171);
+nav p{
+    color:rgb(255, 215, 0);
+    margin: auto 20px auto 40px;
+    text-decoration: none;
+    text-align: right;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+#nav-pagina-inicial a{
+    color:rgb(255, 215, 0);
     margin: auto 20px auto 40px;
     text-decoration: none;
     text-align: right;
@@ -36,17 +44,29 @@ nav a{
 }
 
 h1{
-    text-align: center; 
-    color: rgb(201, 122, 171);
+    color: rgb(255, 215, 0);
 }
 
 strong{
     text-transform: uppercase;
 }
 
+#produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px;
+}
+
+#produtos-nav {
+    display: flex;
+    flex-direction: row;
+}
+
 .footer{
     background-color: black;
-    color:rgb(201, 122, 171);
+    color:rgb(255, 215, 0);
     position: fixed;
     text-align: center;
     bottom: 0;
@@ -60,7 +80,7 @@ strong{
     height: 300px;
     justify-content:space-around;
     flex-direction: row;
-    padding: 50px;
+    padding: 50px 50px 5px 50px;
     font-size: 16px;
 }
 
@@ -68,23 +88,31 @@ img {
     max-width: 120px;
 }
 
-.flex-container .img{
+.flex-container .img {
     flex-direction: column;
     align-items: flex-end;
     margin-left: auto;
+    padding-bottom: 5px;
 }
 
-.produtos{
+.produtos {
     padding: 15px;
     font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
-.flex-container-produtos{
+.flex-container-produtos {
+    width: 140px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5px;
 }
 
-.descricao{
+.descricao {
+    width: 120px;
     padding: 10px;
+    font-size: 0.85em;
+    text-align: justify;
 }
